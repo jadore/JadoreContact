@@ -17,7 +17,7 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="fill_parent"
-                android:layout_height="46.0dip"
+                android:layout_height="50.0dip"
                 android:layout_weight="0.0"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/editor_title_bg" />

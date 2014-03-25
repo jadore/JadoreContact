@@ -86,7 +86,7 @@ public class T9Adapter extends BaseAdapter implements Filterable {
 						}
 					}
 				}
-				holder.pinyin.setText(Html.fromHtml(formattedNumber));
+				//holder.pinyin.setText(Html.fromHtml(formattedNumber));
 			}
 		}
 

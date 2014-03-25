@@ -129,7 +129,7 @@ public class HomeDialActivity extends Activity implements OnClickListener {
 					callLogList.setVisibility(View.VISIBLE);
 					//dial_top_bar.setVisibility(View.GONE);
 				}else{
-					phone_num_view.setVisibility(View.GONE);
+					//phone_num_view.setVisibility(View.GONE);
 					if(null == t9Adapter){
 						//dial_top_bar.setVisibility(View.VISIBLE);
 						t9Adapter = new T9Adapter(HomeDialActivity.this);
