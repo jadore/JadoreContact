@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+<!-- 搜索框的位置 -->
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip" >
+
+        <TextView
+            android:id="@+id/topbar_title"
+            style="@style/topbar_text"
+            android:text="联系人" />
+
+    </RelativeLayout>
+<!-- 显示联系人的位置 -->
+    <com.jadore.view.ui.SlidingLinearLayout
+        android:id="@+id/slidingid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_bar" >
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#000000"
+            android:textColor="#000000"
+            android:fadingEdge="none"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+    </com.jadore.view.ui.SlidingLinearLayout>
+<!-- 显示快速查询的位置 -->
+    <com.jadore.view.ui.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_bar"
+        android:layout_gravity="top|right|center"
+        android:layout_marginTop="0dip"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/dic_background" />
+<!-- 当选择了快速查询中的一个字母，将该字符显示在屏幕中央 -->
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/sort_icon_bg_click"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="#000000"
+        android:textSize="48dip"
+        android:visibility="invisible" />
+<!-- 显示控制盘，主要是添加联系人按钮 -->
+    <LinearLayout 	        
+   	    android:id="@+id/contact_control_pad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dial_input_bg2"
+		android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addContactBtn"
+            style="@style/topbar_right_btn"
+            android:background="@drawable/dialer_pad_show" />
+    </LinearLayout>
+</RelativeLayout>

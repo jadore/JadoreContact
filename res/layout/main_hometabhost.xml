@@ -1,0 +1,52 @@
+<com.jadore.view.ui.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:id="@+id/tabBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_weight="0.0"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/editor_title_bg" />
+<!--            	<Button
+                android:id="@+id/phone_num_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editor_title_bg"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000" 
+                android:visibility="visible"/> -->
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/main_tab_anim_light" />
+        </RelativeLayout>
+         <!--     电话号码显示的地方     -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="0dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</com.jadore.view.ui.AnimationTabHost>
