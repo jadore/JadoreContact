@@ -89,7 +89,7 @@ public class HomeTabHostAcitivity extends TabActivity {
 		setIndicator("拨号", 0, new Intent(this, HomeDialActivity.class), 0);
 		setIndicator("联系人", 1, new Intent(this, HomeContactActivity.class),0);
 		//setIndicator("信息", 2, new Intent(this, HomeSMSActivity.class), 0);
-		setIndicator("群组", 2, new Intent(this, HomeSettintActivity.class), 0);
+		setIndicator("群组", 2, new Intent(this, HomeGroupActivity.class), 0);
 		mTabHost.setOpenAnimation(true);
 //		onPageSelected(1);
 	}

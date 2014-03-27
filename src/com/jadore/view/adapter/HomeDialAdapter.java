@@ -61,10 +61,10 @@ public class HomeDialAdapter extends BaseAdapter {
 		CallLogBean clb = list.get(position);
 		switch (clb.getType()) {
 		case 1:
-			holder.call_type.setBackgroundResource(R.drawable.ic_calllog_outgoing_nomal);
+			holder.call_type.setBackgroundResource(R.drawable.ic_calllog_incoming_normal);
 			break;
 		case 2:
-			holder.call_type.setBackgroundResource(R.drawable.ic_calllog_incoming_normal);
+			holder.call_type.setBackgroundResource(R.drawable.ic_calllog_outgoing_nomal);
 			break;
 		case 3:
 			holder.call_type.setBackgroundResource(R.drawable.ic_calllog_miss_normal);

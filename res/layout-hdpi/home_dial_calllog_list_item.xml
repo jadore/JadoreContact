@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical" >
     <LinearLayout
+        android:id="@+id/call_log_dialer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dip"
@@ -63,7 +64,6 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginLeft="10dip"
-	        android:layout_marginRight="10dip"
-	        android:background="@drawable/expandable_group_close" />
+	        android:background="@drawable/detail_btn" />
 	</LinearLayout>
 </RelativeLayout>

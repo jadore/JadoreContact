@@ -6,7 +6,7 @@
     android:background="#FFFFFF" >
 <!-- 搜索框的位置 -->
     <RelativeLayout
-        android:id="@+id/search_bar"
+        android:id="@+id/contact_search_bar"
         android:layout_width="fill_parent"
         android:layout_height="46.0dip" >
 
@@ -18,10 +18,10 @@
     </RelativeLayout>
 <!-- 显示联系人的位置 -->
     <com.jadore.view.ui.SlidingLinearLayout
-        android:id="@+id/slidingid"
+        android:id="@+id/contact_sliding_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/search_bar" >
+        android:layout_below="@+id/contact_search_bar" >
 
         <ListView
             android:id="@+id/contact_list"
@@ -39,7 +39,7 @@
         android:layout_width="40dp"
         android:layout_height="fill_parent"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/search_bar"
+        android:layout_below="@+id/contact_search_bar"
         android:layout_gravity="top|right|center"
         android:layout_marginTop="0dip"
         android:background="@null"
